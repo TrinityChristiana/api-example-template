@@ -1,0 +1,14 @@
+#main {
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px;
+}
+
+#joke {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  margin: 5px;
+}

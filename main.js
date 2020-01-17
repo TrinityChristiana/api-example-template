@@ -3,9 +3,14 @@ const btn = document.querySelector("#btn");
 const jokeDisplay = document.querySelector("#joke");
 
 const populateJoke = (joke) => {
-  jokeDisplay.innerHTML += `<h2>${joke.id}</h2>
-    <p><b>${joke.setup}</b></p>
-    <p>${joke.punchline}</p>`
+  jokeDisplay.innerHTML += `
+    <div class="card" id="${joke.id}" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${joke.setup}</h5>
+        <p class="card-text">${joke.punchline}</p>
+      </div>
+    </div>
+    `
 }
 
 const getJoke = () => {
